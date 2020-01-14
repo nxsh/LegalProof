@@ -1,2 +1,7 @@
-# LegalProof
-Static version of LegalProof project, to be used until a hosting package is bought
+To Do:
+
+DISABLE MULTI CURSOR
+Vertically align fontawesome icons with text
+Convert to node project
+Integrate login 
+Work on document generation 
