@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Sackers Gothic;
+  src: url(../fonts/SackersGothicStd-Medium.otf);
+}
+
+@font-face {
+  font-family: Bembo Book;
+  src: url(../fonts/BemboBookMTPro-Italic.otf);
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -36,13 +46,15 @@ section {
   background-color: #eee;
 
 }
+/* bembo book font */
 
 #title {
   background: no-repeat url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85");
   background-size: cover;
   opacity: 0.95;
   margin-top: 0px;
-  height: calc(100% - 65px);
+  height: calc(100% - 59px);
+  font-family: 'Sackers Gothic';
 }
 
 .vertical-center {
@@ -62,8 +74,9 @@ section {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 65px;
+  height: 60px;
   background-color: #f5f5f5;
+  font-family: 'Sackers Gothic';
 }
 
 .short {
@@ -76,4 +89,24 @@ section {
 
 #ww {
   white-space: nowrap;
+}
+
+#slogan {
+  font-family: 'Bembo Book';
+  font-size: 10vh;
+}
+
+.navbar-custom {
+  background: #000230;
+}/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: rgba(255,255,255,.8);
+}/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: rgba(255,255,255,.5);
+}/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: #ffffff;
 }
